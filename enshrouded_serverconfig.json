@@ -2,9 +2,9 @@
     "AppID": "EnshroudedServer",
     "ApplicationName": "Enshrouded Server",
     
-    "SteamAppID": "2278520",
-    "Executable": "",
-    "Arguments": "",
+    "SteamAppID": "{{SteamAppIdConfig}}",
+    "Executable": "{{ExecutablePath}}",
+    "Arguments": "{{LaunchArguments}}",
     
     "DockerImage": "://mcr.microsoft.com",
     "DockerRuntime": "windows",
@@ -13,7 +13,8 @@
         {
             "UpdateStageName": "SteamCmd Server Update",
             "UpdateSource": "SteamCMD",
-            "UpdateSourceData": "{{SteamAppID}}",
+            "UpdateSourceData": "{{SteamAppIdConfig}}",
+            "UpdateSourceArgs": "{{ServerFilesBetaVersion}}",
             "UpdateSourcePlatform": "Windows",
             "ForceDownloadPlatform": "Windows"
         }
@@ -28,13 +29,13 @@
         },
         {
             "Name": "Game / Query Port",
-            "Ref": "GamePort",
+            "Ref": "GamePort2",
             "Protocol": "Both",
             "DefaultPort": 15636
         },
         {
             "Name": "Game / Query Port",
-            "Ref": "GamePort",
+            "Ref": "GamePort3",
             "Protocol": "Both",
             "DefaultPort": 15638
         }
@@ -42,10 +43,32 @@
 
     "Settings": [
         {
+            "FieldName": "SteamAppIdConfig",
+            "DisplayName": "AppId",
+            "Description": "Server App Id from Steam.db",
+            "InputType": "number",
+            "DefaultValue": "000000"
+        },
+        {
             "FieldName": "ServerFilesBetaVersion",
-            "DisplayName": "Server files beta branch version string, use public for latest released",
+            "DisplayName": "Beta Branch Version",
+            "Description": "Server files beta branch version string, use public for latest released",
             "InputType": "text",
             "DefaultValue": "public"
+        },
+        {
+            "FieldName": "ExecutablePath",
+            "DisplayName": "Pfad zur Server .exe im Container",
+            "Description": "Relativ zum Hauptverzeichnis, z.B. enshrouded_server.exe",
+            "InputType": "text",
+            "DefaultValue": "enshrouded_server.exe"
+        },
+        {
+            "FieldName": "LaunchArguments",
+            "DisplayName": "Startparameter",
+            "Description": "Parameter für die Server .exe",
+            "InputType": "text",
+            "DefaultValue": ""
         }
     ]
 }
