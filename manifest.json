@@ -6,4 +6,11 @@
 	"imagefile": "",
 	"prefix": "",
 	"repotype": "AppTemplates"
+	"Templates": [
+		{
+			"Id": "7 Days 2 Die Server",
+			"Title": "7 Days 2 Die Server",
+			"Path": "4days2die_template"
+		}
+	]
 }
