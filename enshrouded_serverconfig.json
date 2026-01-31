@@ -15,7 +15,7 @@
             "HostPath": "{{$FullBaseDir}}",
             "ContainerPath": "C:\\app"
         }
-    ]
+    ],
     "DockerMappedFolders": [
         {
             "HostPath": "{{$FullInstancePath}}AppData",
@@ -25,7 +25,12 @@
             "HostPath": "{{$FullInstancePath}}Documents",
             "ContainerPath": "C:\\Users\\ContainerUser\\Documents"
         }
-    ]
+    ],
+    "DockerProvisioning": [
+        "powershell -Command Invoke-WebRequest -Uri https://aka.ms/vs/17/release/vc_redist.x64.exe -OutFile vcredist.exe",
+        "vcredist.exe /install /quiet /norestart",
+        "del vcredist.exe"
+    ],
 
     "UpdateStages": [
         {
