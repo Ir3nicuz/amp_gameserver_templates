@@ -5,12 +5,12 @@
 	"url": "https://github.com/Ir3nicuz/amp_gameserver_templates",
 	"imagefile": "",
 	"prefix": "",
-	"repotype": "AppTemplates"
+	"repotype": "AppTemplates",
 	"Templates": [
 		{
 			"Id": "7 Days 2 Die Server",
 			"Title": "7 Days 2 Die Server",
-			"Path": "4days2die_template"
-		}
+			"Path": "4days2die_template",
+		},
 	]
 }
