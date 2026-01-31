@@ -9,7 +9,11 @@
     "DynamicRunMode": "Docker"
     "DockerImage": "mcr.microsoft.com/windows/servercore:ltsc2022",
     "DockerRuntime": "windows",
-
+    "DockerProvisioning": [
+        "powershell -Command Invoke-WebRequest -Uri https://aka.ms/vs/17/release/vc_redist.x64.exe -OutFile vcredist.exe",
+        "vcredist.exe /install /quiet /norestart",
+        "del vcredist.exe"
+    ],
     "DockerMounts": [
         {
             "HostPath": "{{$FullBaseDir}}",
@@ -26,12 +30,7 @@
             "ContainerPath": "C:\\Users\\ContainerUser\\Documents"
         }
     ],
-    "DockerProvisioning": [
-        "powershell -Command Invoke-WebRequest -Uri https://aka.ms/vs/17/release/vc_redist.x64.exe -OutFile vcredist.exe",
-        "vcredist.exe /install /quiet /norestart",
-        "del vcredist.exe"
-    ],
-
+    
     "UpdateStages": [
         {
             "UpdateStageName": "SteamCmd Server Update",
