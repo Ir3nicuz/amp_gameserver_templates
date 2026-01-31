@@ -19,13 +19,12 @@
         }
     ],
 
-    "//": "--- ABSCHNITT 4: DIE PORTS (Früher eine eigene Datei) ---",
     "Ports": [
         {
-            "Name": "PrimaryPort",
-            "DisplayName": "Game Port",
-            "DefaultPort": 26900,
-            "Protocol": "UDP"
+            "Name": "Game / Query Port",
+            "Ref": "GamePort",
+            "Protocol": "Both",
+            "DefaultPort": 15637
         }
     ],
 
