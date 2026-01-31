@@ -6,11 +6,4 @@
 	"imagefile": "",
 	"prefix": "",
 	"repotype": "AppTemplates",
-	"Templates": [
-		{
-			"Id": "7Days2DieServer",
-			"Title": "7 Days 2 Die Server",
-			"Path": "https://github.com/Ir3nicuz/amp_gameserver_templates/4days2die_template"
-		}
-	]
 }
