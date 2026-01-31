@@ -10,12 +10,13 @@
     "DockerImage": "://mcr.microsoft.com",
     "DockerRuntime": "windows",
 
-    "//": "--- ABSCHNITT 3: DIE UPDATES (Früher eine eigene Datei) ---",
     "UpdateStages": [
         {
-            "UpdateStageName": "SteamCMD Download",
+            "UpdateStageName": "SteamCmd Server Update",
             "UpdateSource": "SteamCMD",
-            "UpdateSourceData": "251570"
+            "UpdateSourceData": "2278520",
+            "UpdateSourcePlatform": "Windows",
+            "ForceDownloadPlatform": "Windows"
         }
     ],
 
