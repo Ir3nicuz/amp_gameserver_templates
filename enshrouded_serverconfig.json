@@ -6,7 +6,7 @@
     "Executable": "{{ExecutablePath}}",
     "Arguments": "{{LaunchArguments}}",
 
-    "DynamicRunMode": "Docker"
+    "DynamicRunMode": "Docker",
     "DockerImage": "mcr.microsoft.com/windows/servercore:ltsc2022",
     "DockerRuntime": "windows",
     "DockerProvisioning": [
