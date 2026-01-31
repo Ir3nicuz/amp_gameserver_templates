@@ -1,1 +1,5 @@
-
+{
+    "Name": "7 Days 2 Die Server",
+    "SettingsConfig": "seven-days-to-dieconfig.json",
+    "ConfigurationConfig": "seven-days-to-die.kvp"
+}
