@@ -1,41 +1,9 @@
 {
-    "AppID": "EnshroudedServer",
-    "ApplicationName": "Enshrouded Server",
-    
-    "SteamAppID": "2278520",
-    "Executable": "{{ExecutablePath}}",
-    "Arguments": "{{LaunchArguments}}",
-
-    "DynamicRunMode": "Docker",
-    "DockerImage": "mcr.microsoft.com/windows/servercore:ltsc2022",
-    "DockerRuntime": "windows",
-    "DockerProvisioning": [
-        "powershell -Command Invoke-WebRequest -Uri https://aka.ms/vs/17/release/vc_redist.x64.exe -OutFile vcredist.exe",
-        "vcredist.exe /install /quiet /norestart",
-        "del vcredist.exe"
-    ],
-    "DockerMounts": [
-        {
-            "HostPath": "{{$FullBaseDir}}",
-            "ContainerPath": "C:\\app"
-        }
-    ],
-    "DockerMappedFolders": [
-        {
-            "HostPath": "{{$FullInstancePath}}AppData",
-            "ContainerPath": "C:\\Users\\ContainerUser\\AppData"
-        },
-        {
-            "HostPath": "{{$FullInstancePath}}Documents",
-            "ContainerPath": "C:\\Users\\ContainerUser\\Documents"
-        }
-    ],
-    
-    "UpdateStages": [
+   "UpdateStages": [
         {
             "UpdateStageName": "SteamCmd Server Update",
             "UpdateSource": "SteamCMD",
-            "UpdateSourceData": "{{SteamAppID}}",
+            "UpdateSourceData": "{{SteamAppId}}",
             "UpdateSourceArgs": "{{ServerFilesBetaVersion}}",
             "UpdateSourcePlatform": "Windows",
             "ForceDownloadPlatform": "Windows"
@@ -63,11 +31,18 @@
         }
     ],
 
-    "Settings": [
+    "Parameters": [
+        {
+            "FieldName": "SteamAppId",
+            "DisplayName": "Server AppId",
+            "Description": "The Steam.DB AppId of the files",
+            "InputType": "number",
+            "DefaultValue": "2278520"
+        },
         {
             "FieldName": "ServerFilesBetaVersion",
             "DisplayName": "Beta Branch Version",
-            "Description": "Server files beta branch version string, use public for latest released",
+            "Description": "Server files beta branch version string, use 'public' for latest released",
             "InputType": "text",
             "DefaultValue": "public"
         },
@@ -82,6 +57,13 @@
             "FieldName": "LaunchArguments",
             "DisplayName": "Startparameter",
             "Description": "Parameter für die Server .exe",
+            "InputType": "text",
+            "DefaultValue": ""
+        },
+        {
+            "FieldName": "StopCmd",
+            "DisplayName": "Stopp Befehl",
+            "Description": "Der Text Stop Befehl wird gesendet, bevor AMP versucht den Prozess direkt (X) zu beenden",
             "InputType": "text",
             "DefaultValue": ""
         }
