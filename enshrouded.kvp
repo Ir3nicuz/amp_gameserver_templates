@@ -15,7 +15,6 @@ Meta.DockerProvisioning=["powershell -Command Invoke-WebRequest -Uri https://aka
 Meta.DockerMappedFolders=[{"HostPath":"{{$FullInstancePath}}AppData","ContainerPath":"C:\\Users\\ContainerAdministrator\\AppData"},{"HostPath":"{{$FullInstancePath}}Documents","ContainerPath":"C:\\Users\\ContainerAdministrator\\Documents"}]
 
 App.ExecutableWin=530870\DedicatedServer\EmpyrionDedicated.exe
-App.ExecutableLinux=/usr/bin/xvfb-run
 App.WorkingDir=530870
 App.CommandLineArgs={{$PlatformArgs}} -batchmode -nographics -dedicated empyriondedicated.yaml -logFile -
 App.ExitMethod=OS_CLOSE
