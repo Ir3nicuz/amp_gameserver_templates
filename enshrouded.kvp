@@ -1,7 +1,9 @@
 Meta.AppConfigId=6f1b3c2a-9d4e-4b7a-8f1c-2d3e4f5a6b62
 Meta.DisplayName=Enshrouded Server
 Meta.ConfigRoot=enshrouded.kvp
-Meta.ConfigManifest=enshrouded_logic.json
+App.Manifest=enshrouded_logic.json
+App.Ports=enshrouded_logic.json
+App.UpdateSources=enshrouded_logic.json
 
 Meta.Description=Generic SteamCmd Server Template
 Meta.Author=Ir3nicuz
