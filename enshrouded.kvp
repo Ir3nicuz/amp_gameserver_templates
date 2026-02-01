@@ -1,4 +1,4 @@
-Meta.AppConfigId=6f1b3c2a-9d4e-4b7a-8f1c-2d3e4f5a6b6b
+Meta.AppConfigId=6f1b3c2a-9d4e-4b7a-8f1c-2d3e4f5a6b6a
 Meta.DisplayName=Enshrouded Server
 Meta.ConfigRoot=enshrouded.kvp
 Meta.ConfigManifest=enshrouded_variables.json
@@ -16,7 +16,7 @@ App.DisplayName=Generic Steam Server
 App.SteamUpdateAnonymousLogin=True
 App.RapidStartup=False
 App.WorkingDir=./
-App.ExecutableWin={{ExecutablePath}}
+App.ExecutableWin=cmd.exe
 App.CommandLineArgs={{LaunchArguments}}
 App.ExitMethod=OS_CLOSE
 App.ExitTimeout=30
