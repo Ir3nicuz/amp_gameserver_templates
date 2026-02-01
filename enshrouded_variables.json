@@ -1,4 +1,4 @@
-{
+[
     {
         "FieldName": "SteamAppId",
         "DisplayName": "Server AppId",
@@ -27,4 +27,4 @@
         "InputType": "text",
         "DefaultValue": ""
     }
-}
+]
