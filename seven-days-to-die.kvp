@@ -1,3 +1,4 @@
+Meta.AppConfigId=d2bef27b-ca22-4528-bc94-29fe3825b4a0
 Meta.DisplayName=Seven Days To Die
 Meta.Description=Seven Days to Die Dedicated Server
 Meta.OS=Windows, Linux
@@ -24,7 +25,6 @@ Meta.NoCommercialUsage=False
 Meta.ConfigVersion=7
 Meta.ReleaseNotes=
 Meta.BreakingReleaseNotes=
-Meta.AppConfigId=d2bef27b-ca22-4528-bc94-29fe3825b4a1
 Meta.ImportableExtensions=[]
 App.DisplayName=Seven Days To Die
 App.RootDir=./seven-days-to-die/
