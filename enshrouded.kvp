@@ -29,15 +29,6 @@ App.ExitString=stop
 App.ExitFile=app_exit.lck
 App.HasWriteableConsole=True
 App.HasReadableConsole=True
-App.SupportsLiveSettingsChanges=False
-App.LiveSettingChangeCommandFormat=set {0} "{1}"
-App.ApplicationIPBinding=0.0.0.0
-App.AdminPortRef=TelnetPort
-App.PrimaryApplicationPortRef=GamePort1
-App.UniversalSleepApplicationUDPPortRef=GamePort1
-App.UniversalSleepSteamQueryPortRef=SteamQueryPort
-App.Compatibility=None
 App.SteamUpdateAnonymousLogin=True
-App.SteamForceLoginPrompt=False
 App.RapidStartup=False
 
