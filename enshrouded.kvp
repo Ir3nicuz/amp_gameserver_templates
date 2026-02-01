@@ -14,7 +14,6 @@ Meta.DockerRunArgs=--user ContainerAdministrator
 Meta.DockerProvisioning=["powershell -Command Invoke-WebRequest -Uri https://aka.ms/vs/17/release/vc_redist.x64.exe -OutFile vcredist.exe; Start-Process -FilePath vcredist.exe -ArgumentList '/install /quiet /norestart' -Wait; Remove-Item vcredist.exe"]
 Meta.DockerMappedFolders=[{"HostPath":"{{$FullInstancePath}}AppData","ContainerPath":"C:\\Users\\ContainerAdministrator\\AppData"},{"HostPath":"{{$FullInstancePath}}Documents","ContainerPath":"C:\\Users\\ContainerAdministrator\\Documents"}]
 
-App.DisplayName=Empyrion Galactic Survival
 App.RootDir=./empyrion-galactic-survival/
 App.BaseDirectory=./empyrion-galactic-survival/530870/
 App.ExecutableWin=530870\DedicatedServer\EmpyrionDedicated.exe
