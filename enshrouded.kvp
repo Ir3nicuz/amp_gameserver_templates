@@ -5,7 +5,6 @@ Meta.Arch=x86_64
 Meta.Author=Shinynecrid, IceOfWraith
 Meta.URL=https://steamdb.info/app/383120/
 Meta.DisplayImageSource=steam:383120
-Meta.EndpointURIFormat=steam://connect/{ip}:{GenericModule.App.Ports.$SteamQueryPort}
 Meta.ConfigManifest=empyrion-galactic-survivalconfig.json
 Meta.ConfigRoot=enshrouded.kvp
 Meta.SpecificDockerImage=cubecoders/ampbase:wine-stable
