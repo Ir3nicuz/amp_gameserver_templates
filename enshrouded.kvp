@@ -18,10 +18,10 @@ App.SteamUpdateAnonymousLogin=True
 App.AutoStart=False
 App.AfterCreationAction=None
 App.RapidStartup=False
+App.WorkingDir=./
+App.ExecutableWin={{ExecutablePath}}
+App.CommandLineArgs={{LaunchArguments}}
 
-App.ExecutableWin=530870\DedicatedServer\EmpyrionDedicated.exe
-App.WorkingDir=530870
-App.CommandLineArgs={{$PlatformArgs}} -batchmode -nographics -dedicated empyriondedicated.yaml -logFile -
 App.ExitMethod=OS_CLOSE
 App.ExitTimeout=30
 App.ExitString=stop
