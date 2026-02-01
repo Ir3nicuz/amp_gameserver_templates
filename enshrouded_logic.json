@@ -39,7 +39,27 @@
         ],
         
         "Ports": [
-                
+                {
+                        "Name": "Port1",
+                        "Ref": "Port1",
+                        "Description": "",  
+                        "Protocol": "Both",
+                        "Port": 15636
+                },
+                {
+                        "Name": "Port2",
+                        "Ref": "Port2",
+                        "Description": "",
+                        "Protocol": "Both",
+                        "Port": 15637
+                },
+                {
+                        "Name": "Port3",
+                        "Ref": "Port3",
+                        "Description": "",
+                        "Protocol": "Both",
+                        "Port": 15638
+                }
         ],
         
         "UpdateStages": [
