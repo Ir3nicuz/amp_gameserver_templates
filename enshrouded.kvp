@@ -40,8 +40,4 @@ App.Compatibility=None
 App.SteamUpdateAnonymousLogin=True
 App.SteamForceLoginPrompt=False
 App.RapidStartup=False
-App.SupportsUniversalSleep=False
-App.WakeupMode=Any
-App.ApplicationReadyMode=RegexMatch
-App.MonitorChildProcessName=^{{$WineBaseDir}}DedicatedServer\\EmpyrionDedicated\.exe.*$
 
