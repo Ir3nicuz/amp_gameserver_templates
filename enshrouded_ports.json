@@ -1,4 +1,4 @@
-{
+[
   {
     "Name": "Port1",
     "Ref": "",
@@ -20,4 +20,4 @@
     "Protocol": "Both",
     "DefaultPort": 15638
   }
-}
+]
