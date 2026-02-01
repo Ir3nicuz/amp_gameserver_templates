@@ -1,4 +1,4 @@
-Meta.AppConfigId=6f1b3c2a-9d4e-4b7a-8f1c-2d3e4f5a6b68
+Meta.AppConfigId=6f1b3c2a-9d4e-4b7a-8f1c-2d3e4f5a6b67
 Meta.DisplayName=Enshrouded Server
 Meta.ConfigRoot=enshrouded.kvp
 Meta.ConfigManifest=enshrouded_variables.json
@@ -17,6 +17,8 @@ App.SteamUpdateAnonymousLogin=True
 App.RapidStartup=False
 App.SupportsIPv6=False
 App.ForceUpdate=False
+App.RootDir=./seven-days-to-die/
+App.BaseDirectory=./seven-days-to-die/294420/
 App.WorkingDir=./
 App.ExecutableWin={{ExecutablePath}}
 App.CommandLineArgs={{LaunchArguments}}
