@@ -8,7 +8,6 @@ Meta.Author=Ir3nicuz
 Meta.DisplayImageSource=
 Meta.OS=Windows
 Meta.Arch=x86_64
-Meta.AfterCreationAction=0
 Meta.SpecificDockerImage=mcr.microsoft.com/windows/servercore:ltsc2022
 Meta.DockerRequired=True
 Meta.DockerRunArgs=--user ContainerAdministrator
@@ -16,15 +15,12 @@ Meta.DockerProvisioning=["powershell -Command Invoke-WebRequest -Uri https://aka
 Meta.DockerMappedFolders=[{"HostPath":"{{$FullInstancePath}}AppData","ContainerPath":"C:\\Users\\ContainerAdministrator\\AppData"},{"HostPath":"{{$FullInstancePath}}Documents","ContainerPath":"C:\\Users\\ContainerAdministrator\\Documents"}]
 
 App.SteamUpdateAnonymousLogin=True
-App.AutoStart=False
 App.RapidStartup=False
 App.WorkingDir=./
 App.ExecutableWin={{ExecutablePath}}
 App.CommandLineArgs={{LaunchArguments}}
-
 App.ExitMethod=OS_CLOSE
 App.ExitTimeout=30
-App.ExitString=stop
 App.HasWriteableConsole=True
 App.HasReadableConsole=True
 
