@@ -63,22 +63,4 @@ App.SupportsUniversalSleep=False
 App.WakeupMode=Any
 App.ApplicationReadyMode=RegexMatch
 App.MonitorChildProcessName=^{{$WineBaseDir}}DedicatedServer\\EmpyrionDedicated\.exe.*$
-Console.FilterMatchRegex=
-Console.FilterMatchReplacement=
-Console.ThrowawayMessageRegex=^(WARNING|ERROR): Shader.+$
-Console.AppReadyRegex=^.*-LOG- Server started listening on port .*$
-Console.UserJoinRegex=^.*-LOG-.*Player (?<userid>.+?)\/'(?<username>.+?)' login ok.*$
-Console.UserLeaveRegex=^.*-LOG-.*, (?<userid>.+?)\/=\/'(?<username>.+?)' disconnected$
-Console.UserChatRegex= 
-Console.UpdateAvailableRegex=^\[\d\d:\d\d:\d\d\] \[INFO\] A new server update is available! v[\d\.]+.$
-Console.MetricsRegex=
-Console.SuppressLogAtStart=False
-Console.ActivateLogRegex=
-Console.UserActions={}
-Limits.SleepMode=True
-Limits.SleepOnStart=False
-Limits.SleepDelayMinutes=5
-Limits.DozeDelay=2
-Limits.AutoRetryCount=2
-Limits.SleepStartThresholdSeconds=25
 
