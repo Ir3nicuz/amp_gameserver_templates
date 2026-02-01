@@ -1,6 +1,23 @@
 {
     "Parameters": [
         {
+            "DisplayName": "Test",
+            "Category": "Server Settings",
+            "Description": "Test",
+            "Keywords": "test",
+            "FieldName": "Test",
+            "InputType": "text",
+            "IsFlagArgument": false,
+            "ParamFieldName": "Test",
+            "IncludeInCommandLine": false,
+            "DefaultValue": "Test",
+            "Placeholder": "Test",
+            "Suffix": "Test",
+            "Hidden": false,
+            "SkipIfEmpty": false,
+            "EnumValues": {}
+        },
+        {
             "FieldName": "SteamAppId",
             "DisplayName": "Server AppId",
             "Description": "The Steam.DB AppId of the server files",
