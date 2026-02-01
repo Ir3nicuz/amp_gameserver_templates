@@ -8,6 +8,7 @@ Meta.ConfigRoot=enshrouded.kvp
 Meta.SpecificDockerImage=cubecoders/ampbase:wine-stable
 Meta.DockerRequired=False
 Meta.AppConfigId=4628ba74-b008-4a39-b481-126d2c1e8c23
+Meta.Author=Ir3nicuz
 
 App.DisplayName=Empyrion Galactic Survival
 App.RootDir=./empyrion-galactic-survival/
