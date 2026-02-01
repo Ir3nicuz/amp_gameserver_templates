@@ -6,9 +6,9 @@ Meta.ConfigManifest=enshrouded_config.json
 Meta.Description=Generic SteamCmd Server Template
 Meta.Author=Ir3nicuz
 Meta.DisplayImageSource=
+Meta.MinAMPVersion=2.6.5.2
 Meta.OS=Windows
 Meta.Arch=x86_64
-
 
 App.DisplayName=Generic Steam Server
 App.SteamUpdateAnonymousLogin=True
