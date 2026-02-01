@@ -1,0 +1,40 @@
+{
+    "Settings": [
+            {
+                    "FieldName": "SteamAppId",
+                    "DisplayName": "Server ",
+                    "Description": "The server App Id from the Steam.DB",
+                    "Category": "Variables",
+                    "Subcategory": "General",
+                    "InputType": "number",
+                    "DefaultValue": 123456
+            },
+            {
+                    "FieldName": "ServerFilesBetaVersion",
+                    "DisplayName": "Beta Branch Version",
+                    "Description": "Server files beta branch version string, use 'public' for latest released",
+                    "Category": "Variables",
+                    "Subcategory": "General",
+                    "InputType": "text",
+                    "DefaultValue": "public"
+            },
+            {
+                    "FieldName": "ExecutablePath",
+                    "DisplayName": "Path to server .exe",
+                    "Description": "relative .exe path to container root, i.E enshrouded_server.exe",
+                    "Category": "Variables",
+                    "Subcategory": "General",
+                    "InputType": "text",
+                    "DefaultValue": "enshrouded_server.exe"
+            },
+            {
+                    "FieldName": "LaunchArguments",
+                    "DisplayName": "Startparameter",
+                    "Description": "Parameters to configure the server .exe",
+                    "Category": "Variables",
+                    "Subcategory": "General",
+                    "InputType": "text",
+                    "DefaultValue": ""
+            }
+    ]
+}
