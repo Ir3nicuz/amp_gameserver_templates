@@ -1,4 +1,4 @@
-Meta.AppConfigId=6f1b3c2a-9d4e-4b7a-8f1c-2d3e4f5a6b70
+Meta.AppConfigId=6f1b3c2a-9d4e-4b7a-8f1c-2d3e4f5a6b79
 Meta.DisplayName=Enshrouded Server
 Meta.ConfigRoot=enshrouded.kvp
 Meta.ConfigManifest=enshrouded_config.json
@@ -8,7 +8,7 @@ Meta.Author=Ir3nicuz
 Meta.DisplayImageSource=
 Meta.OS=Windows
 Meta.Arch=x86_64
-Meta.CreationAction=None
+Meta.CreationAction=0
 Meta.SpecificDockerImage=mcr.microsoft.com/windows/servercore:ltsc2022
 Meta.DockerRequired=True
 Meta.DockerRunArgs=--user ContainerAdministrator
