@@ -1,5 +1,14 @@
 [
     {
+        "DisplayName": "Creating System Links",
+        "UpdateSourceMethod": "ExecuteCommand",
+        "Command": "cmd.exe",
+        "Arguments": [
+            "/c", 
+            "mklink /J \".\\GameConfig\" \"C:\\Users\\AMP\\AppData\\Local\\MyGame\""
+        ]
+    },
+    {
         "UpdateStageName": "SteamCmd Server Update",
         "UpdateSourceMethod": "ExecuteCommand",
         "Command": "C:\\SteamCmd\\steamcmd.exe",
