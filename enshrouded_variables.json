@@ -6,7 +6,7 @@
                 "Category": "Variables",
                 "Subcategory": "General",
                 "InputType": "number",
-                "DefaultValue": "public"
+                "DefaultValue": 2278520
         },
         {
                 "FieldName": "ServerFilesBetaVersion",
