@@ -1,11 +1,15 @@
 [
     {
         "UpdateStageName": "SteamCmd Server Update",
-        "UpdateSource": "SteamCMD",
-        "UpdateSourceData": "{{SteamAppId}}",
-        "UpdateSourceArgs": "{{ServerFilesBetaVersion}}",
-        "UpdateSourceTarget": "{{SteamAppId}}",
-        "UpdateSourcePlatform": "Windows",
-        "ForceDownloadPlatform": "Windows"
+        "UpdateSourceMethod": "ExecuteCommand",
+        "Command": "C:\\SteamCmd\\steamcmd.exe",
+        "Arguments": [
+            "+force_install_dir", "./GameServerFiles/",
+            "@sSteamCmdForcePlatformType", "windows",
+            "+login", "anonymous",
+            "+app_update", "{{SteamAppId}}",
+            "-beta", "{{ServerFilesBetaVersion}}", "-validate",
+            "+quit"
+        ]
     }
 ]
