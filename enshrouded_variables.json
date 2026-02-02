@@ -1,5 +1,14 @@
 [
         {
+                "FieldName": "SteamAppId",
+                "DisplayName": "Steam Server App Id",
+                "Description": "The AppId from Steam.DB for the Server files",
+                "Category": "Variables",
+                "Subcategory": "General",
+                "InputType": "number",
+                "DefaultValue": "public"
+        },
+        {
                 "FieldName": "ServerFilesBetaVersion",
                 "DisplayName": "Beta Branch Version",
                 "Description": "Server files beta branch version string, use 'public' for latest released",
