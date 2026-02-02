@@ -26,4 +26,6 @@ App.ExitTimeout=30
 App.HasWriteableConsole=True
 App.HasReadableConsole=True
 App.SupportsIPv6=False
+App.ApplicationIPBinding=0.0.0.0
+App.PrimaryApplicationPortRef=PrimaryPort
 
