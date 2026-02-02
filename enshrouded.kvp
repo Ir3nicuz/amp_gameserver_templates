@@ -11,6 +11,7 @@ Meta.DisplayImageSource=
 Meta.MinAMPVersion=2.6.5.2
 Meta.OS=Windows
 Meta.Arch=x86_64
+Meta.DockerRequired=False
 
 App.DisplayName=Generic Steam Server
 App.SteamUpdateAnonymousLogin=True
