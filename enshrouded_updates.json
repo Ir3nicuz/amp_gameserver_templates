@@ -1,6 +1,6 @@
 [
     {
-        "UpdateStageName": "AMP-Test-Stage",
+        "UpdateStageName": "Creating System Links",
         "UpdateSourcePlatform": "Windows",
         "UpdateSource": "Executable",
         "UpdateSourceData": "powershell.exe",
