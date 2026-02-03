@@ -1,0 +1,26 @@
+# Linking Script
+$script = @'
+$ProgressPreference = 'SilentlyContinue';
+$links=@{
+	".\Windows_AppData" = "$env:USERPROFILE\AppData";
+	".\Windows_Documents" = "$env:USERPROFILE\Documents";
+};
+$result = foreach($link in $links.Keys) {
+	$target = $links[$link];
+	if(Test-Path $target) {
+		if(Test-Path $link) {
+			Write-Output ($link + ' already exists!');
+		} else {
+			New-Item -Path $link -Target $target -ItemType Junction | Out-Null;
+			Write-Output ('Linking ' + $link + ' --> ' + $target);
+		}
+	} else {
+		Write-Output ('Target ' + $target + ' not found on Host!');
+	}
+}
+$result | Out-String
+'@
+
+# Convert Script to Base64 String
+$bytes = [System.Text.Encoding]::Unicode.GetBytes($script)
+[Convert]::ToBase64String($bytes) | Write-Host
