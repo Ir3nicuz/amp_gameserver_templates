@@ -34,5 +34,14 @@
                 "Subcategory": "General",
                 "InputType": "text",
                 "DefaultValue": ""
+        },
+        {
+                "FieldName": "StopTextCmd",
+                "DisplayName": "Stop Command",
+                "Description": "This command is send to the server stdin before the instance is close by system event.",
+                "Category": "Variables",
+                "Subcategory": "General",
+                "InputType": "text",
+                "DefaultValue": ""
         }
 ]
