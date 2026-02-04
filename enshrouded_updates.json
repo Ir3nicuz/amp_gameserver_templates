@@ -10,7 +10,7 @@
         "UpdateStageName": "SteamCmd Server Update",
         "UpdateSourcePlatform": "Windows",
         "UpdateSource": "Executable",
-        "UpdateSourceData": "C:\\Windows\\System32\\conhost.exe",
-        "UpdateSourceArgs": "--headless C:\\SteamCmd\\steamcmd.exe +force_install_dir ./GameServerFiles/ @sSteamCmdForcePlatformType windows +login anonymous +app_update {{SteamAppId}} -beta {{ServerFilesBetaVersion}} -validate +quit"
+        "UpdateSourceData": "powershell.exe",
+        "UpdateSourceArgs": "-NoProfile -Command \"& C:\\Windows\\System32\\conhost.exe --headless C:\\SteamCmd\\steamcmd.exe +force_install_dir ./GameServerFiles/ @sSteamCmdForcePlatformType windows +login anonymous +app_update {{SteamAppId}} -beta {{ServerFilesBetaVersion}} -validate +quit 2>&1 | ForEach-Object { $_ -replace '\\e\\[[0-9;]*[a-zA-Z]', '' } | Out-Host\""
     }
 ]
