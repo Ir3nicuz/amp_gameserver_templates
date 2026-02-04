@@ -11,6 +11,6 @@
         "UpdateSourcePlatform": "Windows",
         "UpdateSource": "Executable",
         "UpdateSourceData": "powershell.exe",
-        "UpdateSourceArgs": "-NoProfile -Command \"$pinfo = New-Object System.Diagnostics.ProcessStartInfo; $pinfo.FileName = 'C:\\SteamCmd\\steamcmd.exe'; $pinfo.Arguments = '+force_install_dir ./GameServerFiles/ @sSteamCmdForcePlatformType windows +login anonymous +app_update {{SteamAppId}} -beta {{ServerFilesBetaVersion}} -validate +quit'; $pinfo.RedirectStandardOutput = $true; $pinfo.RedirectStandardError = $true; $pinfo.UseShellExecute = $false; $p = [System.Diagnostics.Process]::Start($pinfo); while (!$p.StandardOutput.EndOfStream) { Write-Host $p.StandardOutput.ReadLine() } $p.WaitForExit()\""
+        "UpdateSourceArgs": "-NoProfile -Interactive -Command \"& 'C:\\SteamCmd\\steamcmd.exe' +force_install_dir ./GameServerFiles/ @sSteamCmdForcePlatformType windows +login anonymous +app_update {{SteamAppId}} -beta {{ServerFilesBetaVersion}} -validate +quit\""
     }
 ]
