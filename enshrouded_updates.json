@@ -10,7 +10,7 @@
         "UpdateStageName": "SteamCmd Server Update",
         "UpdateSourcePlatform": "Windows",
         "UpdateSource": "Executable",
-        "UpdateSourceData": "C:\\SteamCmd\\steamcmd.exe",
-        "UpdateSourceArgs": "+force_install_dir ./GameServerFiles/ @sSteamCmdForcePlatformType windows +login anonymous +app_update {{SteamAppId}} -beta {{ServerFilesBetaVersion}} -validate +quit"
+        "UpdateSourceData": "cmd.exe",
+        "UpdateSourceArgs": "C:\\SteamCmd\\steamcmd.exe +force_install_dir ./GameServerFiles/ @sSteamCmdForcePlatformType windows +login anonymous +app_update {{SteamAppId}} -beta {{ServerFilesBetaVersion}} -validate +quit"
     }
 ]
