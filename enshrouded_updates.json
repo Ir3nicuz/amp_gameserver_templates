@@ -7,17 +7,10 @@
         "UpdateSourceArgs": "-NoProfile -NonInteractive -OutputFormat Text -EncodedCommand JABQAHIAbwBnAHIAZQBzAHMAUAByAGUAZgBlAHIAZQBuAGMAZQAgAD0AIAAnAFMAaQBsAGUAbgB0AGwAeQBDAG8AbgB0AGkAbgB1AGUAJwA7AA0ACgAkAGwAaQBuAGsAcwA9AEAAewANAAoACQAiAC4AXABXAGkAbgBkAG8AdwBzAF8AQQBwAHAARABhAHQAYQAiACAAPQAgACIAJABlAG4AdgA6AFUAUwBFAFIAUABSAE8ARgBJAEwARQBcAEEAcABwAEQAYQB0AGEAIgA7AA0ACgAJACIALgBcAFcAaQBuAGQAbwB3AHMAXwBEAG8AYwB1AG0AZQBuAHQAcwAiACAAPQAgACIAJABlAG4AdgA6AFUAUwBFAFIAUABSAE8ARgBJAEwARQBcAEQAbwBjAHUAbQBlAG4AdABzACIAOwANAAoAfQA7AA0ACgAkAHIAZQBzAHUAbAB0ACAAPQAgAGYAbwByAGUAYQBjAGgAKAAkAGwAaQBuAGsAIABpAG4AIAAkAGwAaQBuAGsAcwAuAEsAZQB5AHMAKQAgAHsADQAKAAkAJAB0AGEAcgBnAGUAdAAgAD0AIAAkAGwAaQBuAGsAcwBbACQAbABpAG4AawBdADsADQAKAAkAaQBmACgAVABlAHMAdAAtAFAAYQB0AGgAIAAkAHQAYQByAGcAZQB0ACkAIAB7AA0ACgAJAAkAaQBmACgAVABlAHMAdAAtAFAAYQB0AGgAIAAkAGwAaQBuAGsAKQAgAHsADQAKAAkACQAJAFcAcgBpAHQAZQAtAE8AdQB0AHAAdQB0ACAAKAAkAGwAaQBuAGsAIAArACAAJwAgAGEAbAByAGUAYQBkAHkAIABlAHgAaQBzAHQAcwAhACcAKQA7AA0ACgAJAAkAfQAgAGUAbABzAGUAIAB7AA0ACgAJAAkACQBOAGUAdwAtAEkAdABlAG0AIAAtAFAAYQB0AGgAIAAkAGwAaQBuAGsAIAAtAFQAYQByAGcAZQB0ACAAJAB0AGEAcgBnAGUAdAAgAC0ASQB0AGUAbQBUAHkAcABlACAASgB1AG4AYwB0AGkAbwBuACAAfAAgAE8AdQB0AC0ATgB1AGwAbAA7AA0ACgAJAAkACQBXAHIAaQB0AGUALQBPAHUAdABwAHUAdAAgACgAJwBMAGkAbgBrAGkAbgBnACAAJwAgACsAIAAkAGwAaQBuAGsAIAArACAAJwAgAC0ALQA+ACAAJwAgACsAIAAkAHQAYQByAGcAZQB0ACkAOwANAAoACQAJAH0ADQAKAAkAfQAgAGUAbABzAGUAIAB7AA0ACgAJAAkAVwByAGkAdABlAC0ATwB1AHQAcAB1AHQAIAAoACcAVABhAHIAZwBlAHQAIAAnACAAKwAgACQAdABhAHIAZwBlAHQAIAArACAAJwAgAG4AbwB0ACAAZgBvAHUAbgBkACAAbwBuACAASABvAHMAdAAhACcAKQA7AA0ACgAJAH0ADQAKAH0ADQAKACQAcgBlAHMAdQBsAHQAIAB8ACAATwB1AHQALQBTAHQAcgBpAG4AZwANAAoAWwBTAHkAcwB0AGUAbQAuAEUAbgB2AGkAcgBvAG4AbQBlAG4AdABdADoAOgBFAHgAaQB0ACgAMAApADsA"
     },
     {
-        "UpdateStageName": "Path tests",
-        "UpdateSourcePlatform": "Windows",
-        "UpdateSource": "Executable",
-        "UpdateSourceData": "powershell.exe",
-        "UpdateSourceArgs": "-NoProfile -Command \"Write-Host '--- AMP PFAD TEST ---'; Write-Host 'Home (UserAppDir): {{UserAppDir}}'; Write-Host 'Instanz-Pfad: {{InstancePath}}'; Write-Host 'Arbeitsverzeichnis: ' (Get-Location).Path; Write-Host '--- TEST ENDE ---'\""
-    },
-    {
         "UpdateStageName": "SteamCmd Server Update",
         "UpdateSourcePlatform": "Windows",
         "UpdateSource": "Executable",
         "UpdateSourceData": "powershell.exe",
-        "UpdateSourceArgs": "-NoProfile -Command \"& C:\\Windows\\System32\\conhost.exe --headless C:\\SteamCmd\\steamcmd.exe +force_install_dir ./GameServerFiles/ @sSteamCmdForcePlatformType windows +login anonymous +app_update {{SteamAppId}} -beta {{ServerFilesBetaVersion}} -validate +quit 2>&1 | ForEach-Object { $_ -replace '\\e\\[[0-9;]*[a-zA-Z]', '' } | Out-Host\""
+        "UpdateSourceArgs": "-NoProfile -Command \"& C:\\Windows\\System32\\conhost.exe --headless C:\\SteamCmd\\steamcmd.exe +force_install_dir \"\"$PWD\\GameServerFiles\"\" @sSteamCmdForcePlatformType windows +login anonymous +app_update {{SteamAppId}} -beta {{ServerFilesBetaVersion}} -validate +quit 2>&1 | ForEach-Object { $_ -replace '\\e\\[[0-9;]*[a-zA-Z]', '' } | Out-Host\""
     }
 ]
