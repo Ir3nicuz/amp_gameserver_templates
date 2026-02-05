@@ -1,0 +1,33 @@
+Meta.AppConfigId=5f1b3c2a-9d4e-4b7a-8f1c-2d3e4f5a6b2a
+Meta.DisplayName=Seven Days To Die Server
+Meta.ConfigRoot=sevendaystodie.kvp
+Meta.ConfigManifest=sevendaystodie_variables.json
+App.Ports=@IncludeJson[sevendaystodie_ports.json]
+App.UpdateSources=@IncludeJson[sevendaystodie_updates.json]
+
+Meta.Description=Generic SteamCmd Server Template
+Meta.Author=Ir3nicuz
+Meta.DisplayImageSource=
+Meta.MinAMPVersion=2.6.5.2
+Meta.OS=Windows
+Meta.Arch=x86_64
+Meta.DockerRequired=False
+
+App.DisplayName=Generic Steam Server
+App.SteamUpdateAnonymousLogin=True
+App.RapidStartup=False
+App.ForceUpdate=False
+App.RootDir=./
+App.BaseDirectory=./
+App.WorkingDir=./
+App.AdminMethod=STDIO
+App.ExecutableWin={{ExecutablePath}}
+App.CommandLineArgs={{LaunchArguments}}
+App.ExitMethod=OS_CLOSE
+App.ExitTimeout=30
+App.ExitString={{StopTextCmd}}
+App.HasWriteableConsole=True
+App.HasReadableConsole=True
+App.SupportsIPv6=False
+App.ApplicationIPBinding=0.0.0.0
+App.PrimaryApplicationPortRef=PrimaryPort
