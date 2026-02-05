@@ -11,6 +11,6 @@
         "UpdateSourcePlatform": "Windows",
         "UpdateSource": "Executable",
         "UpdateSourceData": "powershell.exe",
-        "UpdateSourceArgs": "-NoProfile -ExecutionPolicy Bypass -Command \"& { & C:\\Windows\\System32\\conhost.exe --headless C:\\SteamCmd\\steamcmd.exe +force_install_dir \\\"$PWD\\GameServerFiles\\\" @sSteamCmdForcePlatformType windows +login anonymous +app_update {{SteamAppId}} -beta {{ServerFilesBetaVersion}} -validate +quit 2>&1 Start-Sleep -Milliseconds 1000 } | ForEach-Object { $_ -replace '\\x1b(\\[[0-9;?]*[a-zA-Z]|\\].*?(\\x07|\\x1b\\\\))', '' } | Out-Host\""
+        "UpdateSourceArgs": "-NoProfile -ExecutionPolicy Bypass -Command \"& { & C:\\Windows\\System32\\conhost.exe --headless C:\\SteamCmd\\steamcmd.exe +force_install_dir \\\"$PWD\\GameServerFiles\\\" @sSteamCmdForcePlatformType windows +login anonymous +app_update {{SteamAppId}} -beta {{ServerFilesBetaVersion}} -validate +quit 2>&1; Start-Sleep -Milliseconds 1000 } | ForEach-Object { $_ -replace '\\x1b(\\[[0-9;?]*[a-zA-Z]|\\].*?(\\x07|\\x1b\\\\))', '' } | Out-Host\""
     }
 ]
