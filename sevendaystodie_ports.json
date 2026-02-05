@@ -22,7 +22,7 @@
     },
     {
         "Name": "Additional Port 3",
-        "Ref": "AddPort2",
+        "Ref": "AddPort3",
         "Description": "",
         "Protocol": "Both",
         "Port": 27015
