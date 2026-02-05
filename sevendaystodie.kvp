@@ -1,4 +1,4 @@
-Meta.AppConfigId=5f1b3c2a-9d4e-1b7a-8f1c-2d3e4f5a6b2a
+Meta.AppConfigId=5f1b3c2a-9d4e-1b7a-8f1c-1d3e4f5a6b2a
 Meta.DisplayName=Seven Days To Die Server
 Meta.ConfigRoot=sevendaystodie.kvp
 App.Ports=@IncludeJson[sevendaystodie_ports.json]
