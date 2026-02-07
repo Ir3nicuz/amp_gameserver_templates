@@ -12,5 +12,12 @@
         "Description": "",
         "Protocol": "Both",
         "Port": 27018
+    },
+    {
+        "Name": "Additional Port 2",
+        "Ref": "AddPort2",
+        "Description": "",
+        "Protocol": "Both",
+        "Port": 27019
     }
 ]
