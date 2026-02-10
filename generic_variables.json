@@ -18,6 +18,15 @@
                 "DefaultValue": "public"
         },
         {
+                "FieldName": "ExecutableWorkingDirectory",
+                "DisplayName": "Working directory",
+                "Description": "relative working directory for libs from gameserverfiles as root",
+                "Category": "Variables",
+                "Subcategory": "General",
+                "InputType": "text",
+                "DefaultValue": "./"
+        },
+        {
                 "FieldName": "ExecutablePath",
                 "DisplayName": "Path to server .exe",
                 "Description": "relative .exe path to container root, i.E enshrouded_server.exe",
