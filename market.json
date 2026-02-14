@@ -1,0 +1,15 @@
+[
+  {
+    "name": "Mein_Standard_Server",
+    "description": "Inklusive klonsicherem Maintenance-Script",
+    "author": "DeinName",
+    "version": "1.0.0",
+    "type": "universal",
+    "downloadUrl": "https://github.com",
+    "config": {
+        "command": "powershell.exe -File ./start.ps1",
+        "cwd": "",
+        "runtime": "node"
+    }
+  }
+]
